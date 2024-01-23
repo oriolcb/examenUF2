@@ -8,3 +8,38 @@ html, body {
 h1 {
     font-size: 2em;
 }
+
+	/*********************************************************************************/
+	/* Banner                                                                        */
+	/*********************************************************************************/
+
+	#banner {
+		overflow: hidden;
+		padding: 15em 0em;
+		background: url(img/banner.jpg) no-repeat center;
+		background-size: cover;
+		border-top: 1px solid rgba(0, 0, 0, 0.08);
+	}
+
+
+    /*********************************************************************************/
+	/* Animació cotxe                                                                */
+	/*********************************************************************************/
+
+	#banner img {
+		width: 500px;
+		position: absolute;
+		top: 522px;
+		right: -150px;
+		animation: moveCar 8s linear infinite;
+	}
+
+	@keyframes moveCar {
+		0% {
+			right: -600px;
+		}
+
+		100% {
+			right: 100%;
+		}
+	}
